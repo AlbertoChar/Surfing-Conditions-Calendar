@@ -1,24 +1,18 @@
-from flask import Flask, jsonify
-import main  # Replace with the name of your main module
+from flask import Flask, jsonify, render_template
+import surfing_conditions
 
 app = Flask(__name__)
 
 
-class SurfingAPI:
+@app.route('/surfing-conditions', methods=['GET'])
+def surfing_conditions_endpoint():
+    conditions = surfing_conditions.get_surfing_conditions()
 
-    def __init__(self):
-        pass
+    times = [entry["Time (GMT+3)"] for entry in conditions]
+    wave_heights = [entry["Wave Height (m)"] for entry in conditions]
 
-    @staticmethod
-    @app.route('/surfing-conditions', methods=['GET'])
-    def surfing_conditions_endpoint():
-        conditions = main.get_surfing_conditions()
-        return jsonify(conditions)
-
-    def run(self):
-        app.run(debug=True)
+    return render_template('surfing_conditions.html', times=times, wave_heights=wave_heights, data=conditions)
 
 
 if __name__ == "__main__":
-    api = SurfingAPI()
-    api.run()
+    app.run(debug=True)

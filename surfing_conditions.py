@@ -59,6 +59,7 @@ def generate_ics_event(item):
 
     return ics_event
 
+
 def generate_ics_data(filtered_data):
     ics_data = []
     for item in filtered_data:
@@ -67,10 +68,10 @@ def generate_ics_data(filtered_data):
 
     return '\n'.join(ics_data)
 
+
 def write_ics_file(ics_data, file_path):
     with open(file_path, 'w') as file:
         file.write(f"BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:\n{ics_data}\nEND:VCALENDAR")
-
 
 
 def main():

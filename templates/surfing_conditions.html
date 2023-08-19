@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfing Conditions</title>
+    <!-- Load plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Styling for the table -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Displaying the graph -->
+<div id="plotly-div"></div>
+
+<!-- Displaying the table -->
+<table>
+    <thead>
+        <tr>
+            <th>Time (GMT+3)</th>
+            <th>Wave Direction (°)</th>
+            <th>Wave Height (m)</th>
+            <th>Wave Period (s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entry in conditions %}
+        <tr>
+            <td>{{ entry["Time (GMT+3)"] }}</td>
+            <td>{{ entry["Wave Direction (°)"] }}</td>
+            <td>{{ entry["Wave Height (m)"] }}</td>
+            <td>{{ entry["Wave Period (s)"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script>
+    var data = [{
+        x: {{ times|tojson }},
+        y: {{ wave_heights|tojson }},
+        mode: 'lines+markers',
+        type: 'scatter'
+    }];
+
+    var layout = {
+        title: 'Wave Heights This Week',
+        xaxis: {
+            title: 'Time'
+        },
+        yaxis: {
+            title: 'Wave Height (m)'
+        }
+    };
+
+    Plotly.newPlot('plotly-div', data, layout);
+</script>
+</body>
+</html>
