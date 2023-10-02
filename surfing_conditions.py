@@ -3,36 +3,47 @@ from datetime import timedelta
 import arrow
 import requests
 from tabulate import tabulate
+import os
 from flask import Flask, jsonify
 
 
 def get_surfing_conditions():
-    # Get the start and end dates for the next week
-    start_date = arrow.now().floor('day')  # Start from the next day
-    end_date = start_date.shift(days=6)
+    try:
+        # Get the start and end dates for the next week starting from tomorrow
+        start_date = arrow.now().shift(days=1).floor('day')  # Start from tomorrow
+        end_date = start_date.shift(days=6)  # End after 6 days
+        print(start_date)
 
-    url = f'https://marine-api.open-meteo.com/v1/marine?latitude=32.0809&longitude=34.7806&hourly=wave_height,wave_direction,wave_period&start_date={start_date.format("YYYY-MM-DD")}&end_date={end_date.format("YYYY-MM-DD")}'
+        url = f'https://marine-api.open-meteo.com/v1/marine?latitude=32.0809&longitude=34.7806&hourly=wave_height,wave_direction,wave_period&start_date={start_date.format("YYYY-MM-DD")}&end_date={end_date.format("YYYY-MM-DD")}'
 
-    response = requests.get(url)
-    jsonData = response.json()
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for non-2xx status codes
 
-    # Extract the hourly data for each parameter
-    hourly_data = jsonData['hourly']
+        jsonData = response.json()
 
-    # Create a list of dictionaries to store the filtered data in a tabular format
-    filtered_data = []
-    for i in range(len(hourly_data['time'])):
-        time = arrow.get(hourly_data['time'][i])
+        # Extract the hourly data for each parameter
+        hourly_data = jsonData['hourly']
 
-        # Filter hours between 10 am to 7 pm and include only every two hours
-        if 10 <= time.hour < 19 and time.hour % 2 == 0:
-            wave_height = hourly_data['wave_height'][i]
-            wave_direction = hourly_data['wave_direction'][i]
-            wave_period = hourly_data['wave_period'][i]
-            filtered_data.append({'Time (GMT+3)': time.format('YYYY-MM-DD HH:mm'), 'Wave Height (m)': wave_height,
-                                  'Wave Direction (°)': wave_direction, 'Wave Period (s)': wave_period})
+        # Create a list of dictionaries to store the filtered data in a tabular format
+        filtered_data = []
+        for i in range(len(hourly_data['time'])):
+            time = arrow.get(hourly_data['time'][i])
 
-    return filtered_data
+            # Filter hours between 10 am to 7 pm and include only every two hours
+            if 10 <= time.hour < 19 and time.hour % 2 == 0:
+                wave_height = hourly_data['wave_height'][i]
+                wave_direction = hourly_data['wave_direction'][i]
+                wave_period = hourly_data['wave_period'][i]
+                filtered_data.append({'Time (GMT+3)': time.format('YYYY-MM-DD HH:mm'), 'Wave Height (m)': wave_height,
+                                      'Wave Direction (°)': wave_direction, 'Wave Period (s)': wave_period})
+
+        return filtered_data
+    except requests.exceptions.RequestException as e:
+        print(f"HTTP request failed: {e}")
+        return None
+    except ValueError as e:
+        print(f"Failed to parse JSON: {e}")
+        return None
 
 
 def display_table(data):
@@ -77,9 +88,15 @@ def write_ics_file(ics_data, file_path):
 def main():
     surfing_conditions = get_surfing_conditions()
     table_str = display_table(surfing_conditions)
+    print(table_str)
 
     # Create iCalendar events
     ics_data = generate_ics_data(surfing_conditions)
+
+    # Remove the previous calendar file if it exists
+    if os.path.exists('surfing_events.ics'):
+        os.remove('surfing_events.ics')
+
     write_ics_file(ics_data, 'surfing_events.ics')
 
 

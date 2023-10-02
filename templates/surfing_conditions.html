@@ -8,8 +8,17 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Styling for the table -->
     <style>
+        body {
+            font-family: Arial
+        }
+
+        h1 {
+            text-align: center;
+        }
+
         table {
-            width: 100%;
+            width: 70%;
+            margin: auto;
             border-collapse: collapse;
             margin-top: 20px;
         }
@@ -26,7 +35,7 @@
     </style>
 </head>
 <body>
-
+<h1>Weather App</h1>
 <!-- Displaying the graph -->
 <div id="plotly-div"></div>
 
@@ -41,10 +50,10 @@
         </tr>
     </thead>
     <tbody>
-        {% for entry in conditions %}
+        {% for entry in data %}
         <tr>
             <td>{{ entry["Time (GMT+3)"] }}</td>
-            <td>{{ entry["Wave Direction (°)"] }}</td>
+            <td>{{ entry["Wave Direction (°)"]}}</td>
             <td>{{ entry["Wave Height (m)"] }}</td>
             <td>{{ entry["Wave Period (s)"] }}</td>
         </tr>
