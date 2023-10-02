@@ -1,0 +1,249 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231003T100000Z
+DTEND;TZID=Asia/Jerusalem:20231003T101000Z
+SUMMARY:Wave height: 1.1m
+DESCRIPTION:Wave Height: 1.1 m, Wave Direction: 289°, Wave Period: 6.35 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231003T120000Z
+DTEND;TZID=Asia/Jerusalem:20231003T121000Z
+SUMMARY:Wave height: 1.06m
+DESCRIPTION:Wave Height: 1.06 m, Wave Direction: 288°, Wave Period: 6.25 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231003T140000Z
+DTEND;TZID=Asia/Jerusalem:20231003T141000Z
+SUMMARY:Wave height: 1.02m
+DESCRIPTION:Wave Height: 1.02 m, Wave Direction: 288°, Wave Period: 6.1 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231003T160000Z
+DTEND;TZID=Asia/Jerusalem:20231003T161000Z
+SUMMARY:Wave height: 0.96m
+DESCRIPTION:Wave Height: 0.96 m, Wave Direction: 289°, Wave Period: 6.15 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231003T180000Z
+DTEND;TZID=Asia/Jerusalem:20231003T181000Z
+SUMMARY:Wave height: 0.92m
+DESCRIPTION:Wave Height: 0.92 m, Wave Direction: 289°, Wave Period: 6.2 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231004T100000Z
+DTEND;TZID=Asia/Jerusalem:20231004T101000Z
+SUMMARY:Wave height: 0.72m
+DESCRIPTION:Wave Height: 0.72 m, Wave Direction: 294°, Wave Period: 6.65 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231004T120000Z
+DTEND;TZID=Asia/Jerusalem:20231004T121000Z
+SUMMARY:Wave height: 0.68m
+DESCRIPTION:Wave Height: 0.68 m, Wave Direction: 294°, Wave Period: 6.6 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231004T140000Z
+DTEND;TZID=Asia/Jerusalem:20231004T141000Z
+SUMMARY:Wave height: 0.66m
+DESCRIPTION:Wave Height: 0.66 m, Wave Direction: 295°, Wave Period: 6.5 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231004T160000Z
+DTEND;TZID=Asia/Jerusalem:20231004T161000Z
+SUMMARY:Wave height: 0.64m
+DESCRIPTION:Wave Height: 0.64 m, Wave Direction: 296°, Wave Period: 6.25 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231004T180000Z
+DTEND;TZID=Asia/Jerusalem:20231004T181000Z
+SUMMARY:Wave height: 0.64m
+DESCRIPTION:Wave Height: 0.64 m, Wave Direction: 297°, Wave Period: 6.15 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231005T100000Z
+DTEND;TZID=Asia/Jerusalem:20231005T101000Z
+SUMMARY:Wave height: 0.72m
+DESCRIPTION:Wave Height: 0.72 m, Wave Direction: 328°, Wave Period: 5.3 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231005T120000Z
+DTEND;TZID=Asia/Jerusalem:20231005T121000Z
+SUMMARY:Wave height: 0.74m
+DESCRIPTION:Wave Height: 0.74 m, Wave Direction: 331°, Wave Period: 4.9 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231005T140000Z
+DTEND;TZID=Asia/Jerusalem:20231005T141000Z
+SUMMARY:Wave height: 0.82m
+DESCRIPTION:Wave Height: 0.82 m, Wave Direction: 336°, Wave Period: 4.55 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231005T160000Z
+DTEND;TZID=Asia/Jerusalem:20231005T161000Z
+SUMMARY:Wave height: 0.86m
+DESCRIPTION:Wave Height: 0.86 m, Wave Direction: 339°, Wave Period: 4.45 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231005T180000Z
+DTEND;TZID=Asia/Jerusalem:20231005T181000Z
+SUMMARY:Wave height: 0.88m
+DESCRIPTION:Wave Height: 0.88 m, Wave Direction: 342°, Wave Period: 4.5 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231006T100000Z
+DTEND;TZID=Asia/Jerusalem:20231006T101000Z
+SUMMARY:Wave height: 0.58m
+DESCRIPTION:Wave Height: 0.58 m, Wave Direction: 341°, Wave Period: 4.0 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231006T120000Z
+DTEND;TZID=Asia/Jerusalem:20231006T121000Z
+SUMMARY:Wave height: 0.6m
+DESCRIPTION:Wave Height: 0.6 m, Wave Direction: 340°, Wave Period: 3.75 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231006T140000Z
+DTEND;TZID=Asia/Jerusalem:20231006T141000Z
+SUMMARY:Wave height: 0.66m
+DESCRIPTION:Wave Height: 0.66 m, Wave Direction: 340°, Wave Period: 3.65 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231006T160000Z
+DTEND;TZID=Asia/Jerusalem:20231006T161000Z
+SUMMARY:Wave height: 0.7m
+DESCRIPTION:Wave Height: 0.7 m, Wave Direction: 340°, Wave Period: 3.65 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231006T180000Z
+DTEND;TZID=Asia/Jerusalem:20231006T181000Z
+SUMMARY:Wave height: 0.72m
+DESCRIPTION:Wave Height: 0.72 m, Wave Direction: 341°, Wave Period: 3.75 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231007T100000Z
+DTEND;TZID=Asia/Jerusalem:20231007T101000Z
+SUMMARY:Wave height: 0.5m
+DESCRIPTION:Wave Height: 0.5 m, Wave Direction: 320°, Wave Period: 4.4 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231007T120000Z
+DTEND;TZID=Asia/Jerusalem:20231007T121000Z
+SUMMARY:Wave height: 0.52m
+DESCRIPTION:Wave Height: 0.52 m, Wave Direction: 319°, Wave Period: 4.35 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231007T140000Z
+DTEND;TZID=Asia/Jerusalem:20231007T141000Z
+SUMMARY:Wave height: 0.54m
+DESCRIPTION:Wave Height: 0.54 m, Wave Direction: 318°, Wave Period: 4.3 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231007T160000Z
+DTEND;TZID=Asia/Jerusalem:20231007T161000Z
+SUMMARY:Wave height: 0.56m
+DESCRIPTION:Wave Height: 0.56 m, Wave Direction: 318°, Wave Period: 4.3 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231007T180000Z
+DTEND;TZID=Asia/Jerusalem:20231007T181000Z
+SUMMARY:Wave height: 0.56m
+DESCRIPTION:Wave Height: 0.56 m, Wave Direction: 317°, Wave Period: 4.3 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231008T100000Z
+DTEND;TZID=Asia/Jerusalem:20231008T101000Z
+SUMMARY:Wave height: 0.62m
+DESCRIPTION:Wave Height: 0.62 m, Wave Direction: 305°, Wave Period: 6.1 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231008T120000Z
+DTEND;TZID=Asia/Jerusalem:20231008T121000Z
+SUMMARY:Wave height: 0.64m
+DESCRIPTION:Wave Height: 0.64 m, Wave Direction: 305°, Wave Period: 6.05 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231008T140000Z
+DTEND;TZID=Asia/Jerusalem:20231008T141000Z
+SUMMARY:Wave height: 0.7m
+DESCRIPTION:Wave Height: 0.7 m, Wave Direction: 310°, Wave Period: 5.65 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231008T160000Z
+DTEND;TZID=Asia/Jerusalem:20231008T161000Z
+SUMMARY:Wave height: 0.72m
+DESCRIPTION:Wave Height: 0.72 m, Wave Direction: 313°, Wave Period: 5.4 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231008T180000Z
+DTEND;TZID=Asia/Jerusalem:20231008T181000Z
+SUMMARY:Wave height: 0.74m
+DESCRIPTION:Wave Height: 0.74 m, Wave Direction: 315°, Wave Period: 5.4 s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231009T100000Z
+DTEND;TZID=Asia/Jerusalem:20231009T101000Z
+SUMMARY:Wave height: Nonem
+DESCRIPTION:Wave Height: None m, Wave Direction: None°, Wave Period: None s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231009T120000Z
+DTEND;TZID=Asia/Jerusalem:20231009T121000Z
+SUMMARY:Wave height: Nonem
+DESCRIPTION:Wave Height: None m, Wave Direction: None°, Wave Period: None s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231009T140000Z
+DTEND;TZID=Asia/Jerusalem:20231009T141000Z
+SUMMARY:Wave height: Nonem
+DESCRIPTION:Wave Height: None m, Wave Direction: None°, Wave Period: None s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231009T160000Z
+DTEND;TZID=Asia/Jerusalem:20231009T161000Z
+SUMMARY:Wave height: Nonem
+DESCRIPTION:Wave Height: None m, Wave Direction: None°, Wave Period: None s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jerusalem:20231009T180000Z
+DTEND;TZID=Asia/Jerusalem:20231009T181000Z
+SUMMARY:Wave height: Nonem
+DESCRIPTION:Wave Height: None m, Wave Direction: None°, Wave Period: None s
+LOCATION:Tel Aviv, Israel
+END:VEVENT
+END:VCALENDAR
